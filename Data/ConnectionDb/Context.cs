@@ -38,6 +38,40 @@ namespace Data.ConnectionDb
             modelBuilder.Entity<Treatment>()
                 .HasOptional(t => t.Prescription)
                 .WithRequired(p => p.Treatment);
+
+
+            modelBuilder.Entity<Message>().Property(p => p.MailSender).IsRequired().HasMaxLength(100);
+            modelBuilder.Entity<Message>().Property(p => p.Tite).IsRequired().HasMaxLength(100);
+            modelBuilder.Entity<Message>().Property(p => p.MailReceiver).IsRequired().HasMaxLength(100);
+            modelBuilder.Entity<Message>().Property(p => p.Text).IsRequired().HasMaxLength(100);
+
+            modelBuilder.Entity<Admin>().Property(p => p.Surname).IsRequired().HasMaxLength(100);
+            modelBuilder.Entity<Admin>().Property(p => p.Name).IsRequired().HasMaxLength(100);
+            modelBuilder.Entity<Admin>().Property(p => p.Password).IsRequired().HasMaxLength(100);
+            modelBuilder.Entity<Admin>().Property(p => p.Birthdate).IsRequired();
+            modelBuilder.Entity<Admin>().Property(p => p.Mail).IsRequired();
+
+
+            modelBuilder.Entity<Boss>().Property(p => p.Surname).IsRequired().HasMaxLength(100);
+            modelBuilder.Entity<Boss>().Property(p => p.Name).IsRequired().HasMaxLength(100);
+            modelBuilder.Entity<Boss>().Property(p => p.Tc).IsRequired().HasMaxLength(100);
+            modelBuilder.Entity<Boss>().Property(p => p.Mail).IsRequired().HasMaxLength(100);
+            modelBuilder.Entity<Boss>().Property(p => p.Surname).IsRequired().HasMaxLength(100);
+
+
+            modelBuilder.Entity<Patient>().Property(p => p.Surname).IsRequired().HasMaxLength(100);
+            modelBuilder.Entity<Patient>().Property(p => p.Name).IsRequired().HasMaxLength(100);
+            modelBuilder.Entity<Patient>().Property(p => p.Mail).IsRequired().HasMaxLength(100);
+            modelBuilder.Entity<Patient>().Property(p => p.Tc).IsRequired().HasMaxLength(100);
+
+
+            modelBuilder.Entity<Sectarian>().Property(p => p.Surname).IsRequired().HasMaxLength(100);
+            modelBuilder.Entity<Sectarian>().Property(p => p.Name).IsRequired().HasMaxLength(100);
+            modelBuilder.Entity<Sectarian>().Property(p => p.Mail).IsRequired().HasMaxLength(100);
+            modelBuilder.Entity<Sectarian>().Property(p => p.Tc).IsRequired().HasMaxLength(100);
+            modelBuilder.Entity<Sectarian>().Property(p => p.Password).IsRequired().HasMaxLength(100);
+
+
         }
     }
 }
