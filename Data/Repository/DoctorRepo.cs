@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Data.Repository
 {
-    public class Doctor:GenericRepository<Doctor>
+    public class DoctorRepo
     {
+
 
     }
 }
