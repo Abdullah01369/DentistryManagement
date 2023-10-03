@@ -22,7 +22,7 @@ namespace Data.Repository
         {
             
             return context.SaveChanges();
-        } //
+        } 
 
         public Patient Kaydet(Patient entity)
         {
