@@ -193,6 +193,9 @@
     <Compile Include="Attribute\Status.cs" />
     <Compile Include="Attribute\Yetki.cs" />
     <Compile Include="ConnectionDb\Context.cs" />
+    <Compile Include="Dto\BaseDto.cs" />
+    <Compile Include="Dto\ClinicDto.cs" />
+    <Compile Include="Dto\DoctorListDto.cs" />
     <Compile Include="Migrations\202310021251001_mgh.cs" />
     <Compile Include="Migrations\202310021251001_mgh.designer.cs">
       <DependentUpon>202310021251001_mgh.cs</DependentUpon>
@@ -206,6 +209,8 @@
     <Compile Include="Repository\DoctorRepo.cs" />
     <Compile Include="Repository\PatientRepo.cs" />
     <Compile Include="Request\PatientRequest.cs" />
+    <Compile Include="Request\RequestBase.cs" />
+    <Compile Include="Response\DoctorListResponse.cs" />
     <Compile Include="Response\PatientListResponse.cs" />
   </ItemGroup>
   <ItemGroup>

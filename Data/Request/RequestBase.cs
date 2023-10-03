@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace Data.Request
 {
-    public class PatientRequest:RequestBase
+    public class RequestBase
     {
-
+        public Yetki Yetki  { get; set; }
     }
 }
