@@ -13,7 +13,7 @@ namespace BussinnesLayer.Concrete
 {
     public class PatientServices
     {
-        PatientRepo patientRepo = new PatientRepo();
+        PatientRepo patientRepo = new PatientRepo(); //vgg
 
         public PatientListResponse PatientList( RequestBase requestpatient)
         {
