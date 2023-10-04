@@ -448,6 +448,10 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BussinnesLayer\BussinnesLayer.csproj">
+      <Project>{B8C5E9C8-B17E-4626-BEC0-2CA3EA6C7E57}</Project>
+      <Name>BussinnesLayer</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Data\Data.csproj">
       <Project>{CC894395-3ED0-4279-B18E-34A6AADA96F2}</Project>
       <Name>Data</Name>

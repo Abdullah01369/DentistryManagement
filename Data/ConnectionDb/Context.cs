@@ -33,6 +33,8 @@ namespace Data.ConnectionDb
         public DbSet<Subscribing> Subscribings   { get; set; }
         public DbSet<Treatment> Treatments   { get; set; }
 
+       
+        
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Treatment>()
